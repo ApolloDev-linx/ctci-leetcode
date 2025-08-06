@@ -1,3 +1,4 @@
+//Search insert Postion
 function searchInsert(nums,target){
 let left = 0;
 let right = nums.length -1;
