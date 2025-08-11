@@ -13,3 +13,10 @@ let right = nums.length -1;
 }
 
 console.log(searchInsert([1,3,4,5], 2))
+// same tree
+function isSameTree(p,q){
+if(!p && !q){return true;}
+else if( !p || !q){ return false;}
+else if (p.val !== p.val) {return false;}
+	return isSameTree(p.left , q.left ) && isSameTree(p.right, q.right);
+}
